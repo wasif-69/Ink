@@ -71,7 +71,7 @@ const TopchoiceContent = () => {
         }
 
         const recRes = await fetch(
-          "http://127.0.0.1:5000/article",
+          "https://ink-zb89.onrender.com/article",
           {
             method: "POST",
             headers: {
