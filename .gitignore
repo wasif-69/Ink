@@ -1,13 +1,25 @@
-# Ignore virtual environments in any subfolder
+# Python / Flask (ignores inside server/ or anywhere)
 .venv/
 venv/
 env/
+__pycache__/
+*.pyc
 
-# Ignore environment variable files anywhere
+# Next.js / Node (ignores inside website/ or anywhere)
+node_modules/
+.next/
+out/
+build/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment secrets (blocks .env, .env.local, etc. everywhere)
 .env
 .env.*
 
-# Ignore Python & Node caches
-__pycache__/
-*.pyc
-node_modules/
+# OS & logs
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
