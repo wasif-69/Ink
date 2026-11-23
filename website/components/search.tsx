@@ -31,7 +31,7 @@ const Search = () => {
         setLoading(true);
         setError("");
 
-        const response = await fetch("http://127.0.0.1:5000/article", {
+        const response = await fetch("https://ink-zb89.onrender.com/article", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

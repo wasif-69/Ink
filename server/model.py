@@ -48,9 +48,9 @@ def parse_timestamp(ts):
   return None
 
 
-@app.route("/")
-def dummy():
-  return "<h1>Hello world!<h1>"
+# @app.route("/")
+# def dummy():
+#   return "<h1>Hello world!<h1>"
 
 @app.route("/article", methods=["POST"])
 def articles():
