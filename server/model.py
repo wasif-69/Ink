@@ -1,15 +1,14 @@
 from bertopic import BERTopic
-from sentence_transformers import SentenceTransformer
-from flask import Flask,request
-from flask_cors import CORS
-import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
-from sentence_transformers import SentenceTransformer
+from datetime import datetime, timezone
 import os
 from dotenv import load_dotenv
+from flask import Flask, request
+from flask_cors import CORS
+import numpy as np
 from pymongo import MongoClient
-import pandas
-from datetime import datetime, timezone
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+
 
 app=Flask(__name__)
 CORS(app)
