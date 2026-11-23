@@ -1,4 +1,3 @@
-from bertopic import BERTopic
 from datetime import datetime, timezone
 import os
 from dotenv import load_dotenv
